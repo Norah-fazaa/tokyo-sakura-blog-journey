@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MapPin, Calendar, Heart } from "lucide-react";
 import Header from "../components/Header";
@@ -6,7 +5,7 @@ import Footer from "../components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-blue-50 dark:from-gray-900 dark:via-purple-900/50 dark:to-gray-800">
       <Header />
       
       {/* Hero Section */}
@@ -16,22 +15,22 @@ const Index = () => {
             <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-blue-600 bg-clip-text text-transparent mb-6">
               Tokyo Dreams
             </h1>
-            <p className="text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
               Un voyage magique au cœur du Japon, entre tradition millénaire et modernité futuriste. 
               Découvrez Tokyo à travers mes yeux émerveillés.
             </p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
               <Calendar className="w-5 h-5 text-pink-500" />
               <span>Mars 2024</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
               <MapPin className="w-5 h-5 text-purple-500" />
               <span>Tokyo, Japon</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
               <Heart className="w-5 h-5 text-red-500" />
               <span>15 jours inoubliables</span>
             </div>
@@ -49,7 +48,7 @@ const Index = () => {
       {/* Images Gallery Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Tokyo en images</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200">Tokyo en images</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
             <div className="relative group overflow-hidden rounded-xl shadow-lg">
               <img 
@@ -117,36 +116,36 @@ const Index = () => {
       {/* Highlights Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Mes moments favoris</h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-gray-200">Mes moments favoris</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-br from-pink-400 to-pink-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white text-xl">🌸</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Hanami à Ueno</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">Hanami à Ueno</h3>
+              <p className="text-gray-600 dark:text-gray-400">
                 L'expérience magique des cerisiers en fleurs dans le parc d'Ueno, 
                 entourée de familles japonaises célébrant le printemps.
               </p>
             </div>
             
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white text-xl">🏮</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Nuits de Shibuya</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">Nuits de Shibuya</h3>
+              <p className="text-gray-600 dark:text-gray-400">
                 L'effervescence nocturne de Shibuya, ses néons colorés et 
                 l'énergie incroyable de cette métropole qui ne dort jamais.
               </p>
             </div>
             
-            <div className="bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
+            <div className="bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                 <span className="text-white text-xl">⛩️</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-gray-800">Temple Senso-ji</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-200">Temple Senso-ji</h3>
+              <p className="text-gray-600 dark:text-gray-400">
                 La sérénité du temple le plus ancien de Tokyo, un havre de paix 
                 au milieu de l'agitation urbaine d'Asakusa.
               </p>
