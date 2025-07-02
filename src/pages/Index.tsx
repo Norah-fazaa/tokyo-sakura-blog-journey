@@ -46,6 +46,74 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Images Gallery Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Tokyo en images</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=400&h=300&fit=crop&crop=center"
+                alt="Nuit étoilée à Tokyo"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Nuit étoilée</p>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop&crop=center"
+                alt="Lumières dorées entre les arbres"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Lumières dorées</p>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&h=300&fit=crop&crop=center"
+                alt="Sérénité au bord de l'eau"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Sérénité</p>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop&crop=center"
+                alt="Sommet brumeux"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Brume matinale</p>
+              </div>
+            </div>
+            
+            <div className="relative group overflow-hidden rounded-xl shadow-lg md:col-span-2">
+              <img 
+                src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&h=300&fit=crop&crop=center"
+                alt="Rivière entre les montagnes"
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="text-sm font-medium">Paysage montagneux</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Highlights Section */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
